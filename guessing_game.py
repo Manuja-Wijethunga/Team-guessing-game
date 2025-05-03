@@ -1,11 +1,10 @@
 import random
+import time
 
-number = random.randint(1, 10)
-print("Guess a number between 1 and 10")
+print(" Welcome to the Number Guessing Game!")
 
-guess = int(input("Your guess: "))
-
-if guess == number:
-    print("You win!")
-else:
-    print(f"Wrong! The number was {number}")
+while True:
+    number = random.randint(1, 100) 
+    print("I'm thinking of a number between 1 and 100.")
+    
+    start_time=time.time()
